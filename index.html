@@ -6,7 +6,7 @@
 <body>
   <script>
 
-    console.log("Let's play rock paper scissors!")
+    alert("Let's play rock paper scissors!")
     let options = ["rock", "paper", "scissors"]
     let playerScore = 0
     let computerScore = 0
@@ -69,13 +69,13 @@
     }
     function game() {
       for (i = 0; i < 5; i++) {
-        console.log(playRound(choice(), computerPlay()))
+        alert(playRound(choice(), computerPlay()))
       }
       if (playerScore > computerScore) {
-        console.log(`You win the game! Woohoo! Player Score: ${playerScore} Computer Score: ${computerScore}`);
+        alert(`You win the game! Woohoo! Player Score: ${playerScore} Computer Score: ${computerScore}`);
       }
       else {
-        console.log(`You lose the game! Bummer! Player Score: ${playerScore} Computer Score: ${computerScore}`)
+        alert(`You lose the game! Bummer! Player Score: ${playerScore} Computer Score: ${computerScore}`)
       }
     }
 
