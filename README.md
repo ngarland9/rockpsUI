@@ -1,3 +1,1 @@
-# rockps
-
-It's a rock paper scissors game for the odin project. 
+This is my second version of Rock Paper Scissors. This time I will be adding a user interface
