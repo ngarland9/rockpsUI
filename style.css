@@ -1,8 +1,8 @@
 body {
-  border: 3px solid black;
+  
   margin: auto;
   text-align: center;
-  background:  #f5f5f5
+  background:  white;
 }
 h1 {
   border: none;
@@ -16,7 +16,7 @@ h1 {
 
 
 button {
-  background-color: white;
+  background-color:#f5f5f5;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -30,18 +30,20 @@ button:hover {
   text-shadow: 1px 1px #e0e026;
   border: 1px solid #e0e026;
   color: white;
-  background-color:  black;
+  background-color: #f5f5f5;
 }
 
 #score {
   color: #e0e026;
   text-shadow: 1px 1px black;
   font-size: 24px;
+  padding: 20px;
 }
 
 #display {
   font-size: 26px;
   text-shadow: 1px 1px #e0e026;
+  padding: 20px;
 }
 
 #playerIcon {
@@ -56,4 +58,5 @@ button:hover {
 img {
   height: 200px;
   width: 200px;
+  border-radius: 5%;
 }
