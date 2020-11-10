@@ -4,82 +4,19 @@
 <title></title>
 </head>
 <body>
-  <script>
+  <div id="btns">
+    <h1>Let's play rock paper scissors!</h1>
+    <button class="btn" id="rock">Rock</button>
+    <button class="btn" id="paper">Paper</button>
+    <button class="btn" id="scissors">Scissors</button>
+  </div>
+  <div id="display">
+    
+  </div>
+  <div id="score">
+    </div>
+  <script  src="rockpsUI.js">
 
-    alert("Let's play rock paper scissors!")
-    let options = ["rock", "paper", "scissors"]
-    let playerScore = 0
-    let computerScore = 0
-
-    function score(n) {
-      if (n == "player") {
-       
-        playerScore += 1;
-      }
-      else {
-        
-        computerScore += 1;
-      }
-    }
-  
-    function computerPlay() {
-      return options[(Math.floor(Math.random() * 3))]
-    }
-
-  
-    function choice() {
-      let playerChoice= prompt("Rock paper or scissors friend? Shhh I won't tell. ").toLocaleLowerCase();
-      return playerChoice
-    }
-
-    function playRound(playerSelection, computerSelection) {
-      if (playerSelection === computerSelection) {
-        return "It's a tie!! Play again!"
-      }
-      if (playerSelection == "rock") {
-        if (computerSelection == "paper") {
-          score();
-          return "You lose! Paper beats Rock!";
-        }
-        else {
-          score("player");
-          return "You win! Rock beats Scissors!";
-        }
-      }
-      if (playerSelection == "paper") {
-        if (computerSelection == "scissors") {
-          score();
-          return "You lose! Scissors beats Paper!";
-        }
-        else {
-          score("player");
-          return "You win! Paper beats Rock!";
-        }
-      }
-        if (playerSelection == "scissors") {
-          if (computerSelection == "rock") {
-            score();
-            return "You lose! Rock beats Scissors!";
-          }
-          else {
-            score("player");
-            return "You win! Scissors beats Rock!";
-          }
-        }
-    }
-    function game() {
-      for (i = 0; i < 5; i++) {
-        alert(playRound(choice(), computerPlay()))
-      }
-      if (playerScore > computerScore) {
-        alert(`You win the game! Woohoo! Player Score: ${playerScore} Computer Score: ${computerScore}`);
-      }
-      else {
-        alert(`You lose the game! Bummer! Player Score: ${playerScore} Computer Score: ${computerScore}`)
-      }
-    }
-
-  
   </script>
 </body>
 </html>
