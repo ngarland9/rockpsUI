@@ -30,12 +30,24 @@
         return "It's a tie!! Play again! "
       }
       if (playerSelection == "rock") {
+        let elem = document.createElement("img");
+        elem.src = 'images/rock.png';
+        document.getElementById('playerIcon').innerHTML = ""
+        document.getElementById("playerIcon").appendChild(elem);
         if (computerSelection == "paper") {
           score();
+          let elem = document.createElement("img");
+          elem.src = 'images/paper.png';
+          document.getElementById('computerIcon').innerHTML = ""
+          document.getElementById("computerIcon").appendChild(elem);
           return "You lose! Paper beats Rock! ";
         }
         else {
           score("player");
+          let elem = document.createElement("img");
+          elem.src = 'images/scissors.png';
+          document.getElementById('computerIcon').innerHTML = ""
+          document.getElementById("computerIcon").appendChild(elem);
           return "You win! Rock beats Scissors! ";
         }
       }

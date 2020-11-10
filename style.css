@@ -10,7 +10,7 @@ h1 {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  
+  text-shadow: 2px 2px #e0e026;
   font-size: 42px;
 }
 
@@ -31,4 +31,23 @@ button:hover {
   border: 1px solid #e0e026;
   color: white;
   background-color:  black;
+}
+
+#score {
+  color: #e0e026;
+  text-shadow: 1px 1px black;
+  font-size: 24px;
+}
+
+#display {
+  font-size: 26px;
+  text-shadow: 1px 1px #e0e026;
+}
+
+#playerIcon {
+  display: inline-block;
+}
+
+#computerIcon {
+  display: inline-block;
 }
