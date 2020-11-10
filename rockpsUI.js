@@ -76,18 +76,21 @@
 document.getElementById("rock").addEventListener("click", function() {
  const para = document.getElementById('score');
  const txt = document.createTextNode(playRound("rock", computerPlay()));
+ document.getElementById('score').innerHTML = ""
  para.appendChild(txt);
  document.getElementById('display').innerHTML = `Player Score: ${playerScore} Computer Score: ${computerScore}`;
 });
 document.getElementById("paper").addEventListener("click", function() {
 const para = document.getElementById('score');
  const txt = document.createTextNode(playRound("paper", computerPlay()));
+ document.getElementById('score').innerHTML = ""
  para.appendChild(txt);
  document.getElementById('display').innerHTML = `Player Score: ${playerScore} Computer Score: ${computerScore}`;
 });
 document.getElementById("scissors").addEventListener("click", function() {
   const para = document.getElementById('score');
   const txt = document.createTextNode(playRound("scissors", computerPlay()));
+  document.getElementById('score').innerHTML = ""
   para.appendChild(txt);
   document.getElementById('display').innerHTML = `Player Score: ${playerScore} Computer Score: ${computerScore}`;
 });
